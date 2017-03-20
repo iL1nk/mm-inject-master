@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>mm-inject-popup</title>
+        <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="src/css/style.css" />
+    </head>
+    <body>
+        <header>
+          <div id="logo">
+            <img src="https://ui61.maxymiser.com/Content/images/Auth/logo.png" alt="" />
+            <!-- https://ui61.maxymiser.com/Content/images/logo-oracle.png -->
+          </div>
+          <div id="toggle">
+            <input type="checkbox" data-toggle="toggle" data-size="small" data-onstyle="success">
+          </div>
+          <hr/>
+        </header>
+        <section>
+          <ul>
+            <li>
+              <select id="ui" class="form-control">
+                <option value="-1">Select UI</option>
+                <option value="0">ui61</option>
+                <option value="1">demo</option>
+                <option value="2">ui61us</option>
+                <option value="3">vcb</option>
+                <option value="4">qa</option>
+              </select>
+            </li>
+            <li>
+              <input id="domain" class="form-control" placeholder="Choose domain" type="text" />
+            </li>
+            <li>
+              <select id="api" class="form-control">
+                <option value="-1">Select API version</option>
+                <option value="0">mmapi</option>
+                <option value="1">mmcore</option>
+              </select>
+            </li>
+          </ul>
+          <a id="apply" class="btn btn-success btn-block" href="#" role="button">Apply</a>
+        </section>
+        <footer>
+          <hr/>
+          <p>Find out more on <a href="https://github.com/iL1nk/mm-inject-master" target="_blank">gitlab</a>.</p>
+        </footer>
+
+        <script src="src/js/jquery.js"></script>
+        <script src="src/js/bootstrap.toggle.js"></script>
+        <script src="src/js/popup.js"></script>
+    </body>
+</html>
